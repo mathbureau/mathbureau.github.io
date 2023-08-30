@@ -58,6 +58,7 @@ header ul {
     display: flex;
     flex-direction: row;
     justify-content: right;
+    gap: 40px;
 }
 
 header ul li a {

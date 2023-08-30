@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | MBI</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./res/math-dark.png" alt="" class="head-img">
+        <h1 class="head-text">Mathematical Bureau of Investigation</h1>
+        <ul class="head-ul">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Apply</a></li>
+        </ul>
+    </header>
+    <div class="main">
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfKehJg6M8ZRk7lU59FWyN3sLuVelN_X32WrShDm-psudDMXA/viewform?embedded=true"
+            width="640" height="3249" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+    <footer>
+        &copy; 2023, Mathematical Bureau of Investigation
+    </footer>
+    <script>
+        ScrollReveal().reveal('.head-text', { duration: 1000, distance: '50px', origin: 'right' })
+        ScrollReveal().reveal('.head-img', { duration: 800, distance: '30px', origin: 'left' })
+        ScrollReveal().reveal('.head-ul', { duration: 800, distance: '30px', origin: 'bottom', delay: 200 })
+        ScrollReveal().reveal('footer', { duration: 1000, distance: '30px', origin: 'bottom', delay: 500 })
+    </script>
+</body>
+
+</html>
