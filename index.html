@@ -9,16 +9,39 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
+    <header>
+        <img src="./res/math-dark.png" alt="" class="head-img">
+        <h1 class="head-text">Mathematics Bureau of Investigation</h1>
+        <ul class="head-ul">
+            <li><a href="#">Home</a></li>
+        </ul>
+    </header>
     <div class="main">
-        <img src="./res/math-dark.png" alt="">
-        <h1>Website Under Construction</h1>
-        <span>&copy; 2023, Mathematics Bureau of Investigation</span>
+        <div class="row">
+            <div class="left-col">
+                <h2>Notifications</h2>
+                <hr>
+                <ul class="notif">
+                    <li><a href="./files/notice_of_establishment.pdf" target="_blank">Notice of Establishment</a></li>
+                </ul>
+            </div>
+            <div class="right-col">
+                <img src="./res/sec1.jpg" alt="">
+            </div>
+        </div>
     </div>
-
+    <footer>
+        &copy; 2023, Mathematics Bureau of Investigation
+    </footer>
     <script>
-        ScrollReveal().reveal('img', {duration: 1000, distance: '50px', origin: 'bottom'})
-        ScrollReveal().reveal('h1', {duration: 800, distance: '30px', origin: 'bottom'})
-        ScrollReveal().reveal('span', {duration: 800, distance: '30px', origin: 'bottom'})
+        ScrollReveal().reveal('.head-text', {duration: 1000, distance: '50px', origin: 'right'})
+        ScrollReveal().reveal('.head-img', {duration: 800, distance: '30px', origin: 'left'})
+        ScrollReveal().reveal('.head-ul', {duration: 800, distance: '30px', origin: 'bottom', delay: 200})
+        ScrollReveal().reveal('.left-col h2', {duration: 1000, distance: '10px', origin: 'bottom', delay: 250})
+        ScrollReveal().reveal('.left-col hr', {duration: 1000, distance: '10px', origin: 'bottom', delay: 250})
+        ScrollReveal().reveal('.left-col ul', {duration: 1000, distance: '10px', origin: 'bottom', delay: 250})
+        ScrollReveal().reveal('.right-col img', {duration: 800, distance: '20px', origin: 'right', delay: 300})
+        ScrollReveal().reveal('footer', {duration: 1000, distance: '30px', origin: 'bottom', delay: 500})
     </script>
 </body>
 </html>
