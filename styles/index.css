@@ -58,7 +58,10 @@ header ul {
     display: flex;
     flex-direction: row;
     justify-content: right;
-    gap: 40px;
+}
+
+header ul li {
+    width: 15%;
 }
 
 header ul li a {
