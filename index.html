@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
+
 <body>
     <header>
         <img src="./res/math-dark.png" alt="" class="head-img">
@@ -19,6 +22,16 @@
     <div class="main">
         <div class="row">
             <div class="left-col">
+                <span class="type-text"></span>
+                <!-- >Protecting Mathematics and <a href="discord.gg/math" target="_blank">Mathcord <i class="bi bi-box-arrow-up-right"></i></a>. -->
+            </div>
+            <div class="right-col">
+                <span>Live Server Statistics</span>
+                <iframe class="discord" src="https://discordapp.com/widget?id=268882317391429632&theme=dark"></iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div class="left-col">
                 <h2>Notifications</h2>
                 <hr>
                 <ul class="notif">
@@ -26,7 +39,7 @@
                 </ul>
             </div>
             <div class="right-col">
-                <img src="./res/sec1.jpg" alt="">
+                <!-- <img src="./res/sec1.jpg" alt=""> -->
             </div>
         </div>
     </div>
@@ -34,14 +47,18 @@
         &copy; 2023, Mathematics Bureau of Investigation
     </footer>
     <script>
-        ScrollReveal().reveal('.head-text', {duration: 1000, distance: '50px', origin: 'right'})
-        ScrollReveal().reveal('.head-img', {duration: 800, distance: '30px', origin: 'left'})
-        ScrollReveal().reveal('.head-ul', {duration: 800, distance: '30px', origin: 'bottom', delay: 200})
-        ScrollReveal().reveal('.left-col h2', {duration: 1000, distance: '10px', origin: 'bottom', delay: 250})
-        ScrollReveal().reveal('.left-col hr', {duration: 1000, distance: '10px', origin: 'bottom', delay: 250})
-        ScrollReveal().reveal('.left-col ul', {duration: 1000, distance: '10px', origin: 'bottom', delay: 250})
-        ScrollReveal().reveal('.right-col img', {duration: 800, distance: '20px', origin: 'right', delay: 300})
-        ScrollReveal().reveal('footer', {duration: 1000, distance: '30px', origin: 'bottom', delay: 500})
+        ScrollReveal().reveal('.head-text', { duration: 1000, distance: '50px', origin: 'right' })
+        ScrollReveal().reveal('.head-img', { duration: 800, distance: '30px', origin: 'left' })
+        ScrollReveal().reveal('.head-ul', { duration: 800, distance: '30px', origin: 'bottom', delay: 200 })
+        ScrollReveal().reveal('.type-text', {duration: 800, distance: '30px', origin: 'right'})
+        ScrollReveal().reveal('.right-col iframe', {duration: 800, distance: '30px', origin: 'left', delay: 250})
+        ScrollReveal().reveal('.left-col h2', { duration: 1000, distance: '10px', origin: 'bottom', delay: 250 })
+        ScrollReveal().reveal('.left-col hr', { duration: 1000, distance: '10px', origin: 'bottom', delay: 250 })
+        ScrollReveal().reveal('.left-col ul', { duration: 1000, distance: '10px', origin: 'bottom', delay: 250 })
+        ScrollReveal().reveal('.right-col img', { duration: 800, distance: '20px', origin: 'right', delay: 300 })
+        ScrollReveal().reveal('footer', { duration: 1000, distance: '30px', origin: 'bottom', delay: 500 })
+        var typed = new Typed('.type-text', { strings: ['Protecting <b>Mathematics</b>', 'Protecting <a href="discord.gg/math"><b>Mathcord</b></a>'], typeSpeed: 30, loop: true, backSpeed: 30, startDelay: 1500 })
     </script>
 </body>
+
 </html>
